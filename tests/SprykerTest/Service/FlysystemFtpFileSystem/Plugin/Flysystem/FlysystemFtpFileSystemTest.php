@@ -26,9 +26,6 @@ use Spryker\Service\FlysystemFtpFileSystem\Plugin\Flysystem\FtpFilesystemBuilder
  */
 class FlysystemFtpFileSystemTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testFtpFilesystemBuilderPlugin(): void
     {
         $localFilesystemBuilderPlugin = new FtpFilesystemBuilderPlugin();
@@ -50,9 +47,6 @@ class FlysystemFtpFileSystemTest extends Unit
         $this->assertInstanceOf(FilesystemOperator::class, $ftpFilesystem);
     }
 
-    /**
-     * @return void
-     */
     public function testFtpFilesystemBuilderPluginShouldAcceptType(): void
     {
         $localFilesystemBuilderPlugin = new FtpFilesystemBuilderPlugin();

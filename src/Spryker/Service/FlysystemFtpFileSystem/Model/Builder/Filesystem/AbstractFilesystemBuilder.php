@@ -17,9 +17,6 @@ abstract class AbstractFilesystemBuilder implements FilesystemBuilderInterface
      */
     protected $config;
 
-    /**
-     * @param \Generated\Shared\Transfer\FlysystemConfigTransfer $configTransfer
-     */
     public function __construct(FlysystemConfigTransfer $configTransfer)
     {
         $this->config = $configTransfer;

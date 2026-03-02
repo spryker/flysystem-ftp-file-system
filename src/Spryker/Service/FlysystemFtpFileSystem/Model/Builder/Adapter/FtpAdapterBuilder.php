@@ -28,9 +28,6 @@ class FtpAdapterBuilder implements AdapterBuilderInterface
      */
     protected $connectionOptions;
 
-    /**
-     * @param \Generated\Shared\Transfer\FlysystemConfigFtpTransfer $adapterConfig
-     */
     public function __construct(FlysystemConfigFtpTransfer $adapterConfig)
     {
         $this->adapterConfig = $adapterConfig;
